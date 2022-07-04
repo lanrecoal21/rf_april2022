@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20220704 22:48:29.232" rpa="false" schemaversion="2">
+<suite id="s1" name="Apitest" source="C:\Users\lanre\PycharmProjects\rf_april2022\tests\apitest.robot">
+<test id="s1-t1" name="Get Pet with status available">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>Mysession</arg>
+<arg>https://petstore.swagger.io</arg>
+<arg>verify=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220704 22:48:29.482" level="INFO">Creating Session using : alias=Mysession, url=https://petstore.swagger.io, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20220704 22:48:29.481" endtime="20220704 22:48:29.482"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${reponse}</var>
+<arg>Mysession</arg>
+<arg>/v2/pet/findByStatus?</arg>
+<arg>params=status=available</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20220704 22:48:31.012" level="INFO">GET Request : url=https://petstore.swagger.io/v2/pet/findByStatus?status=available 
+ path_url=/v2/pet/findByStatus?status=available 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220704 22:48:31.013" level="INFO">GET Response : url=https://petstore.swagger.io/v2/pet/findByStatus?status=available 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 04 Jul 2022 19:47:12 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ body=[{"id":9223372036854774933,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774934,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774935,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774936,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774937,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774938,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774939,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774940,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774941,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774942,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774943,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774944,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774945,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774946,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774947,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774948,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774949,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774950,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774951,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774952,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774953,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774954,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774955,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774956,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774957,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774958,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774959,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774960,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774961,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774962,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774963,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774964,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774965,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774966,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774967,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774968,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774969,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774970,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774971,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774972,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774973,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774974,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774975,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774976,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774977,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774978,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774979,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774980,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774981,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774982,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774983,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774984,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774985,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774986,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774987,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774988,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774989,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774990,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774991,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774992,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774993,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774994,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774995,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854774996,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20220704 22:48:31.014" level="INFO">${reponse} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220704 22:48:29.482" endtime="20220704 22:48:31.014"/>
+</kw>
+<kw name="Status Should Be" library="RequestsLibrary">
+<arg>200</arg>
+<arg>${reponse}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" starttime="20220704 22:48:31.015" endtime="20220704 22:48:31.016"/>
+</kw>
+<doc>This test case verifies that the response code for pet status available is 200</doc>
+<status status="PASS" starttime="20220704 22:48:29.480" endtime="20220704 22:48:31.016"/>
+</test>
+<test id="s1-t2" name="Get Pet with status pending">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>Mysession</arg>
+<arg>https://petstore.swagger.io</arg>
+<arg>verify=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220704 22:48:31.018" level="INFO">Creating Session using : alias=Mysession, url=https://petstore.swagger.io, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20220704 22:48:31.018" endtime="20220704 22:48:31.019"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${reponse}</var>
+<arg>Mysession</arg>
+<arg>/v2/pet/findByStatus?</arg>
+<arg>params=status=pending</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20220704 22:48:31.648" level="INFO">GET Request : url=https://petstore.swagger.io/v2/pet/findByStatus?status=pending 
+ path_url=/v2/pet/findByStatus?status=pending 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220704 22:48:31.648" level="INFO">GET Response : url=https://petstore.swagger.io/v2/pet/findByStatus?status=pending 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 04 Jul 2022 19:47:14 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ body=[{"id":393245,"category":{"id":0},"name":"Novo nome","photoUrls":[],"tags":[],"status":"pending"},{"id":1122,"category":{"id":60838341,"name":"Kesha"},"name":"parrot","photoUrls":["sint laborum nostrud Excepteur","Lorem tempor"],"tags":[{"id":-3527195,"name":"culpa laboris"},{"id":37346216,"name":"dolore incididunt"}],"status":"pending"},{"id":5555,"category":{"id":77462120,"name":"nisi dolore"},"name":"Klive","photoUrls":["sit laboris quis et","commodo labore dolor dolor"],"tags":[{"id":-88822666,"name":"eiusmod velit"},{"id":26422211,"name":"officia in aliquip"}],"status":"pending"},{"id":8,"name":"Parrot","photoUrls":[],"tags":[],"status":"pending"},{"id":27411805,"category":{"id":11797157,"name":"mollit repreh"},"name":"doggie","photoUrls":["laborum lab","est mollit ipsum ad"],"tags":[{"id":25135152,"name":"Duis in in"},{"id":-61548872,"name":"Ut ea nostrud magna"}],"status":"pending"},{"id":41675076,"category":{"id":39746630,"name":"non sint in Excepteur"},"name":"doggie","photoUrls":["pariatur","Duis est"],"tags":[{"id":3036439,"name":"eu ea labore irure"},{"id":24399010,"name":"officia commodo ipsum nulla ut"}],"status":"pending"},{"id":68783552,"category":{"id":57019602,"name":"in"},"name":"doggie","photoUrls":["fugiat sunt occaecat labore Excepteur","cupidatat in"],"tags":[{"id":41094418,"name":"ut Duis"},{"id":-96713650,"name":"ut velit exercitation cillum"}],"status":"pending"},{"id":7,"name":"Ferret","photoUrls":[],"tags":[],"status":"pending"},{"id":2609,"name":"Json Whiskers","photoUrls":["http://cutecats.com/1.jpg","http://cutecats.com/2.jpg","http://cutecats.com/3.jpg"],"tags":[],"status":"pending"}] 
+ </msg>
+<msg timestamp="20220704 22:48:31.648" level="INFO">${reponse} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220704 22:48:31.019" endtime="20220704 22:48:31.648"/>
+</kw>
+<kw name="Status Should Be" library="RequestsLibrary">
+<arg>200</arg>
+<arg>${reponse}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" starttime="20220704 22:48:31.649" endtime="20220704 22:48:31.650"/>
+</kw>
+<doc>This test case verifies that the response code for pet status available is 200</doc>
+<status status="PASS" starttime="20220704 22:48:31.017" endtime="20220704 22:48:31.650"/>
+</test>
+<test id="s1-t3" name="Get Pet with status sold">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>Mysession</arg>
+<arg>https://petstore.swagger.io</arg>
+<arg>verify=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220704 22:48:31.654" level="INFO">Creating Session using : alias=Mysession, url=https://petstore.swagger.io, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20220704 22:48:31.654" endtime="20220704 22:48:31.654"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${reponse}</var>
+<arg>Mysession</arg>
+<arg>/v2/pet/findByStatus?</arg>
+<arg>params=status=sold</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20220704 22:48:32.298" level="INFO">GET Request : url=https://petstore.swagger.io/v2/pet/findByStatus?status=sold 
+ path_url=/v2/pet/findByStatus?status=sold 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220704 22:48:32.298" level="INFO">GET Response : url=https://petstore.swagger.io/v2/pet/findByStatus?status=sold 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 04 Jul 2022 19:47:15 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ body=[{"id":9,"category":{"id":0,"name":"cats"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":12,"category":{"id":0,"name":"dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":93491598,"category":{"id":85845475,"name":"pariatur voluptate magna"},"name":"doggie","photoUrls":["consectetur in","proident velit veniam aute aliqua"],"tags":[{"id":27183072,"name":"deserunt dolo"},{"id":-32281601,"name":"reprehenderit aute Lorem deserunt"}],"status":"sold"},{"id":6479003,"category":{"id":-4830501,"name":"irure adipisicing e"},"name":"doggie","photoUrls":["sit elit","commodo quis pariatur cupidatat"],"tags":[{"id":-53025539,"name":"proident et reprehenderit"},{"id":76820909,"name":"labore ullamco"}],"status":"sold"},{"id":91507602,"category":{"id":-95494262,"name":"sit ea"},"name":"doggie","photoUrls":["deserunt","id sint et"],"tags":[{"id":-54029842,"name":"ullamco"},{"id":13198949,"name":"id"}],"status":"sold"},{"id":3903023,"category":{"id":-56789506,"name":"cillum p"},"name":"doggie","photoUrls":["aliquip Excepteur","commodo dolore consequat eu"],"tags":[{"id":60937326,"name":"irure in"},{"id":20218536,"name":"sint consectetur ad voluptate"}],"status":"sold"},{"id":3708840,"category":{"id":9855812,"name":"Duis in commodo"},"name":"doggie","photoUrls":["minim id in sit","est esse culpa nisi"],"tags":[{"id":-89808508,"name":"sit"},{"id":-5238278,"name":"dolor in"}],"status":"sold"},{"id":24093935,"category":{"id":-6714225,"name":"do magna"},"name":"doggie","photoUrls":["aute","velit"],"tags":[{"id":71561130,"name":"deserunt ut occaecat"},{"id":-1195842,"name":"nulla nostrud occaeca"}],"status":"sold"},{"id":25,"category":{"id":0,"name":"dog"},"name":"PERRITO MALVADO SALI DE CARAVANA, TE VA DE GIRA","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":7574746,"category":{"id":1,"name":"Cat"},"name":"Hardy","photoUrls":["https://i.pinimg.com/originals/5c/2c/44/5c2c44f16da1caf134c00bc4f9c72ea0.jpg"],"tags":[{"id":7805,"name":"Mainecoon"}],"status":"sold"}] 
+ </msg>
+<msg timestamp="20220704 22:48:32.298" level="INFO">${reponse} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220704 22:48:31.655" endtime="20220704 22:48:32.298"/>
+</kw>
+<kw name="Status Should Be" library="RequestsLibrary">
+<arg>200</arg>
+<arg>${reponse}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" starttime="20220704 22:48:32.299" endtime="20220704 22:48:32.300"/>
+</kw>
+<doc>This test case verifies that the response code for pet status available is 200</doc>
+<status status="PASS" starttime="20220704 22:48:31.652" endtime="20220704 22:48:32.301"/>
+</test>
+<test id="s1-t4" name="Get Pet with by ID">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>Mysession</arg>
+<arg>https://petstore.swagger.io</arg>
+<arg>verify=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220704 22:48:32.305" level="INFO">Creating Session using : alias=Mysession, url=https://petstore.swagger.io, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20220704 22:48:32.304" endtime="20220704 22:48:32.305"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${reponse}</var>
+<arg>Mysession</arg>
+<arg>/v2/pet/9223372036854775807</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20220704 22:48:32.887" level="INFO">GET Request : url=https://petstore.swagger.io/v2/pet/9223372036854775807 
+ path_url=/v2/pet/9223372036854775807 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220704 22:48:32.888" level="INFO">GET Response : url=https://petstore.swagger.io/v2/pet/9223372036854775807 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 04 Jul 2022 19:47:15 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ body={"id":9223372036854775807,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"} 
+ </msg>
+<msg timestamp="20220704 22:48:32.888" level="INFO">${reponse} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220704 22:48:32.306" endtime="20220704 22:48:32.888"/>
+</kw>
+<kw name="Status Should Be" library="RequestsLibrary">
+<arg>200</arg>
+<arg>${reponse}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" starttime="20220704 22:48:32.889" endtime="20220704 22:48:32.890"/>
+</kw>
+<doc>This test case verifies that the response code for pet status available is 200</doc>
+<tag>Get1</tag>
+<status status="PASS" starttime="20220704 22:48:32.303" endtime="20220704 22:48:32.892"/>
+</test>
+<test id="s1-t5" name="Create a new pet in pet store">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${body}</var>
+<arg>id=0</arg>
+<arg>name=cat</arg>
+<arg>status=available</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220704 22:48:32.897" level="INFO">${body} = {'id': '0', 'name': 'cat', 'status': 'available'}</msg>
+<status status="PASS" starttime="20220704 22:48:32.896" endtime="20220704 22:48:32.898"/>
+</kw>
+<kw name="POST" library="RequestsLibrary">
+<var>${resp}</var>
+<arg>https://petstore.swagger.io/v2/pet</arg>
+<arg>json=${body}</arg>
+<doc>Sends a POST request.</doc>
+<msg timestamp="20220704 22:48:33.538" level="INFO">POST Request : url=https://petstore.swagger.io/v2/pet 
+ path_url=/v2/pet 
+ headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '49', 'Content-Type': 'application/json'} 
+ body=b'{"id": "0", "name": "cat", "status": "available"}' 
+ </msg>
+<msg timestamp="20220704 22:48:33.539" level="INFO">POST Response : url=https://petstore.swagger.io/v2/pet 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 04 Jul 2022 19:47:16 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ body={"id":9223372036854775807,"name":"cat","photoUrls":[],"tags":[],"status":"available"} 
+ </msg>
+<msg timestamp="20220704 22:48:33.539" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220704 22:48:32.899" endtime="20220704 22:48:33.539"/>
+</kw>
+<kw name="Status Should Be" library="RequestsLibrary">
+<arg>200</arg>
+<arg>${resp}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" starttime="20220704 22:48:33.541" endtime="20220704 22:48:33.541"/>
+</kw>
+<doc>This test case verifies that the response code for creating pet is 200</doc>
+<tag>post</tag>
+<status status="PASS" starttime="20220704 22:48:32.894" endtime="20220704 22:48:33.542"/>
+</test>
+<doc>API Testing in Robot Framework</doc>
+<status status="PASS" starttime="20220704 22:48:29.239" endtime="20220704 22:48:33.546"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Get1</stat>
+<stat pass="1" fail="0" skip="0">post</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Apitest">Apitest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
